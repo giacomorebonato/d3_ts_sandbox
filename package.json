@@ -1,0 +1,27 @@
+{
+  "name": "mino_sci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "$(npm bin)/webpack",
+    "start": "npm run build && $(npm bin)/webpack-dev-server --content-base public/ --quiet --port 3000 --hot --inline"
+  },
+  "author": "Giacomo Rebonato",
+  "license": "MIT",
+  "dependencies": {
+    "d3-v4-definitelytyped": "git@github.com:tomwanzek/d3-v4-definitelytyped.git",
+    "simple-statistics": "^2.1.0",
+    "typescript": "^2.1.0-dev.20160912",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.25.0",
+    "d3": "^4.2.2",
+    "file-loader": "^0.9.0",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.8.2",
+    "url-loader": "^0.5.7"
+  }
+}
